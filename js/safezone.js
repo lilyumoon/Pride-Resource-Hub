@@ -23,6 +23,7 @@ const processCalendarSelection = (selectedDates, dateStr, instance) => {
 
         if (event) { // If an event is found for the selected date...
             if (event.link) { // If the event has a link, show the link in the details
+                // TODO: can condense common elements
                 eventDetails.innerHTML = `
                     <h3>${event.title}</h3>
                     <p>&nbsp;Date: ${event.date}</p>
