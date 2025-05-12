@@ -1,0 +1,89 @@
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar li {
+    background-color: #dadada;
+    list-style: none;
+    padding: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.sidebar a {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #003e74;
+    word-wrap: break-word;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+.sidebar a:visited,
+.sidebar a:hover,
+.sidebar a:active {
+    color: #003e74;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.flatpickr-input {
+    display: none;
+}
+
+.flatpickr-calendar {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: 19.5rem;
+    justify-self: center;
+    margin: 0.5rem 0;
+}
+
+.flatpickr-day.event-day {
+    background-color: #ffeb3b; 
+    color: #000; 
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+#event-details {
+    margin: 0.5rem 0;
+    max-width: 19.5rem;
+}
+
+#event-details h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    border-bottom: 0.1rem solid #003e74;
+}
+
+#event-details h4 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#event-details p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.25rem 0;
+}
+
+#event-details a {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #003e74;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .flatpickr-calendar {
+        justify-self: left;
+    }
+    #event-details {
+        max-width: 100%;
+    }
+}

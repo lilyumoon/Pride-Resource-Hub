@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <title>Current Issues</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/issues.css">
+    <script src="js/utility.js"></script>
+    <script src="js/issues.js"></script>
+</head>
+<body>
+    <div class="header"></div>
+
+    <main>
+        <div class="title-block">
+            <h1 class="center-aligned">Issues Guide</h1>
+        </div>
+        <div class="contents">
+            <div class="content-block">
+                <p>
+                    This page provides access to the Current Issues Guide, a living document designed to inform and empower the Northwood Tech community. It tracks political, economic, and social issues which impact students, families, and communities. You may also submit relevant articles or resources for consideration using the form below.
+                </p>
+            </div>
+            
+            <!-- <iframe 
+                id="embedded-content" 
+                src="https://mywitc-my.sharepoint.com/personal/17954689_northwoodtech_edu/_layouts/15/Doc.aspx?sourcedoc={7b59988b-1dcd-4cc1-b9e7-64568eb51fe6}&amp;action=embedview&amp;scale=50"
+                allowfullscreen
+                >
+            </iframe> -->
+           
+            <div id="form-container">
+                <h1>Submit an Article or Resource</h1>
+                <p>
+                    If you have content which you believe should be included in the Current Issues Guide, please submit it using the form below. Your contributions are valuable in keeping our community informed and engaged.
+                </p>
+                <form id="submission-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="A Brief Description" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="resource-url">Link:</label>
+                        <input type="text" id="resource-url" name="resource-url" placeholder="A link if applicable">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Notes:</label>
+                        <textarea id="description" name="description" rows="6"  placeholder="What should we know about this?" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <span>&nbsp;</span>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer"></div>
+</body>
+</html>

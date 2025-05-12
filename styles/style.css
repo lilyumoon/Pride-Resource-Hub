@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 0.8rem;
+    color: #333;
+    background-color: #f0f0f0;
+    margin: 0 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.title-block {
+    display: block;
+    background-color: #003e74;
+    text-align: center;
+    font-size: 1.75rem;
+    color: #F7A925;
+    margin: 1.75rem;
+    padding: 0.5rem;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    margin: 1rem 0.75rem;
+    padding: 1rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    flex-shrink: 0;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.content-container {
+    display: table-cell;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.intro-container {
+    border-bottom: 0.1rem solid black;
+}
+
+/* clearfix to address floated intro-visual */
+.intro-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* TODO: Get rid of float entirely.
+    Look into defining more step-based breakpoints.
+    Mobile-first vs Desktop-first. */
+.intro-visual {
+    display: block;
+    float: left;
+    width: 30rem;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 0.25rem;
+}
+
+figcaption {
+    display: block;
+    max-width: 100%;
+    font-weight: 300;
+}
+
+.intro-content {
+    display: block;
+    min-height: 16.5rem;
+    padding: 1rem;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.main-content {
+    display: block;
+}
+
+.center-aligned {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-aligned {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.italic {
+    font-style: italic;
+}
+
+@media screen and (max-width: 1023px) {
+    body{
+        margin: 0 0.5rem;
+    }
+    .title-block {
+        margin: 1rem;
+    }
+    .contents {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        margin: 0;
+        order: 2;
+    }
+    .content-container {
+        margin-left: 0;
+    }
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-visual {
+        float: none;
+        margin: 0;
+        width: auto;
+        max-width: 25rem;
+    }
+    figure {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .title-block h1 {
+        margin: 0.5rem;
+        padding: 0.25rem;
+        font-size: 2.5rem;}
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-Thin.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-ThinItalic.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-Light.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-LightItalic.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-Medium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-MediumItalic.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-Heavy.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
