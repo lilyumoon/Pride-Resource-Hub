@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
     Utility.injectHtmlAsync(".footer", "includes/footer.html");
 
+
     document.querySelector("#submission-form").addEventListener("submit", (e) => {
-    
         // prevent the default form submission behavior
         e.preventDefault();
 
@@ -26,11 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 if (xhr.status === 200) {
-                    console.log("Form submitted successfully");
-                    alert("Thank you! Your submission has been sent.");
+                    location.reload();
                 } else {
                     console.error("Error submitting form");
-                    alert("There was an error submitting your form. Please try again.");
                 }
             }
         };
@@ -38,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // clear form fields after submission
         clearForm();
-
     });
 });
 
