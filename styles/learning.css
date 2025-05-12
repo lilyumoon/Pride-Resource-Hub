@@ -68,3 +68,25 @@
         padding: 0;
     }
 }
+
+/* CSS for printer-friendly version */
+@media print {
+    .sidebar, .header, .footer {
+        display: none /* hide sidebar, header, and footer */
+    }
+    .content-container {
+        width: 100%; 
+    }
+    .collapsible-content {
+        max-height: none !important; /* force to show all content */
+        overflow: visible !important; 
+    }
+    .collapsible-category {
+        background-color: #fff !important; /* white background for print */
+    }
+    .collapsible-content ul li a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #003e74;
+    }
+}
